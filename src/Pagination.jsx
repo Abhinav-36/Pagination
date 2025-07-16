@@ -28,9 +28,7 @@ export default function Pagination(){
                     setData(res.data)
                 }
             } catch (error) {
-                if(error && error.response.status === 400){
-                    console.error("Something went wrong",error);
-                }
+                alert("failed to fetch data");
             }
 
         }
